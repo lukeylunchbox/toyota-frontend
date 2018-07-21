@@ -8,8 +8,8 @@ class ChangePassword extends Component {
     this.state = {
       errors: {},
       oldPassword: "",
-      password1: "",
-      password2: ""
+      password: "",
+      password1: ""
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -35,8 +35,8 @@ class ChangePassword extends Component {
     // on submit form data to update password in database
     const password = {
       oldPassword: this.state.oldPassword,
-      password1: this.state.password1,
-      password2: this.state.password2
+      password: this.state.password,
+      password1: this.state.password1
     }
 
     instance.patch("/users/password", password) 
@@ -78,8 +78,8 @@ class ChangePassword extends Component {
                         <input
                           className='form-control form-control-md'
                           type='text'
-                          name='password1'
-                          value={this.state.password1}
+                          name='password'
+                          value={this.state.password}
                           onChange={this.handleChange}
                          
                           />
@@ -92,8 +92,8 @@ class ChangePassword extends Component {
                         <input
                           className='form-control form-control-md'
                           type='text'
-                          name='password2'
-                          value={this.state.password2}
+                          name='password1'
+                          value={this.state.password1}
                           onChange={this.handleChange}
                           // placeholder={this.state.user.employeeNumber}
                           />
