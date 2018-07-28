@@ -56,7 +56,7 @@ class App extends Component {
     const adminRouteComponents = adminRoutes.map(({path, component}, key) => <Route exact path={path} component={component} key={key} />)
     const forbiddenOrLoginRouteComponents = adminRoutes.map(({path}, key) => this.state.loggedIn ? <Route exact path={path} component={Error403} key={key} /> : <Redirect to="/" key={key}/>)
     const userRouteComponents = userRoutes.map(({path, component}, key) => <Route exact path={path} component={component} key={key} />)
-    const loginRouteComponents = userRoutes.map(({path}, key) =>  <Route path={path} render={() => <Redirect to="/" key={key}/>} />)
+    const loginRouteComponents = userRoutes.map(({path}, key) =>  <Route path={path} key={key} render={ () =>  <Redirect to="/" />} />)
     if (!this.state.loaded) { return <Loader /> }
     return(
       <Router history={history} forceRefresh={true}>

@@ -24,14 +24,14 @@ class ResetPassword extends Component {
       password2Error: ""
     }
 
-    if (this.state.password.length < 3 || this.state.password.length > 30) {
+    if (this.state.password.length < 6 || this.state.password.length > 30) {
       isError = true
-      errors.passwordError = 'Your new password must be between 2 and 30 characters'
+      errors.passwordError = 'Your new password must be between 6 and 30 characters'
     }
 
-    if (this.state.password2.length < 3 || this.state.password2.length > 30)  {
+    if (this.state.password2.length < 6 || this.state.password2.length > 30)  {
       isError = true
-      errors.password2Error = 'Your new password must be between 2 and 30 characters'
+      errors.password2Error = 'Your new password must be between 6 and 30 characters'
     }
 
     if (this.state.password !== this.state.password2)  {
