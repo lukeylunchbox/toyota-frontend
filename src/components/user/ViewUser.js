@@ -256,7 +256,7 @@ class ViewUser extends Component {
                           className="btn btn-secondary"
                         />
                         <span className="tab-space2"></span>
-                    <button className="btn btn-secondary"><Link to={`/users/${this.props.match.params.id}/password`}>Reset Password</Link></button>
+                        <Link className="btn btn-secondary" to={`/users/${this.props.match.params.id}/password`}>Reset Password</Link>
                       </div>
                     </div>
                   </form>

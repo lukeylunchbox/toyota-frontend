@@ -1,9 +1,7 @@
 # CA Team 2 - Term 3 Group Project
 # Safe Operating Procedure Management Application
 
-GitHub: [Front-end](https://github.com/peytr/toyota-frontend) - GitHub: [Back-end](https://github.com/peytr/toyota-backend)
-
-Deployed: [https://radiant-river-46965.herokuapp.com/](https://radiant-river-46965.herokuapp.com/)
+Deployed: [https://zealous-morse-4b2e8d.netlify.com/](https://zealous-morse-4b2e8d.netlify.com/)
 
 ## Table of Contents
 
@@ -132,16 +130,16 @@ We built a significant amount of wireframes on Figma prior to commencing any cod
 Although there were too many wireframes built to show them all in detail, some examples can be seen below:
 
 Desktop - Admin (MySOP Page)\
-![Admin Desktop](readme_assets/desktop-admin-manage-user-800.png)
+![Admin Desktop](readme_assets/desktop-admin-manage-user.png)
 
-Mobile - User (MySOP Page)\
-![User Desktop](readme_assets/ipad-my-sop-75-600.png)
+Desktop - User (MySOP Page)\
+![User Desktop](readme_assets/desktop-user-mysop.png)
 
 Mobile - Admin (Users Pages)\
-![Admin Mobile](readme_assets/iphone-1-1-600.png)
+![Admin Mobile](readme_assets/iphone-1.png)
 
 Mobile - User (Login Pages)\
-![User Mobile](readme_assets/iphone-1-600.png)
+![User Mobile](readme_assets/iphone-2.png)
 
 The extent of out wireframes\
 ![Complete Wireframe](readme_assets/wireframes-all.png)
@@ -149,7 +147,7 @@ The extent of out wireframes\
 ## Challenges
 During the production period of our application, we inevitably faced several challenges that put a halt to plans.
 
-The first and perhaps most serious challenge for us, was that due to Toyota Australia’s current IT situation, our app had to be fully compatible with Internet Explorer 11.  
+The first and perhaps most serious challenge for us, was that due to our clients current IT situation, our app had to be fully compatible with Internet Explorer 11.
 
 This was a difficult ordeal since IE 11 is incompatible with so many standard and expected browser functions. Every new feature we wanted to implement was first cross checked via a browser compatibility app (below).
 
